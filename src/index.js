@@ -5,8 +5,7 @@
 
 module.exports =  function getLoveTrianglesCount(preferences = []){
   var count = 0;
-    for(var n = 0; n < preferences.length;n++){
-     
+    for(var n = 0; n < preferences.length;n++){    
       var k = preferences[n];
         for (var i = n; i < preferences.length; i++) {
           if (preferences[i] == n+1){
@@ -17,12 +16,10 @@ module.exports =  function getLoveTrianglesCount(preferences = []){
                   break;                  
                 }
               }
-            }
-        
+            }       
           }
         }
       }
-  
   return count;
 };
 
